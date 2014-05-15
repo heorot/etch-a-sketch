@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	createGrid();
-
+	prompt("I run when loaded")
 	$("#top > #reset").on("click", function() {
 		$("#wrapper").find(".highlight").remove(".highlight");
 		$("#wrapper").find(".cell").remove(".cell");
