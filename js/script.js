@@ -1,12 +1,12 @@
 $(document).ready(function(){
-	//createGrid();
+	createGrid();
 
 	$("#top > #reset").on("click", function() {
 		$("#wrapper").find(".highlight").remove(".highlight");
 		$("#wrapper").find(".cell").remove(".cell");
 
 		createGrid();
-	})
+	});
 
 
 
