@@ -1,7 +1,18 @@
 $(document).ready(function(){
 	prompt("I run when loaded")
 	
-	function createGrid() {
+	$("#top > #reset").on("click", function() {
+		$("#wrapper").find(".highlight").remove(".highlight");
+		$("#wrapper").find(".cell").remove(".cell");
+		createGrid();
+	});
+
+
+
+});
+
+
+function createGrid() {
 	var gridSize = prompt("Choose your grid size (up to 128):");
 	
 	
@@ -27,16 +38,3 @@ $(document).ready(function(){
 		alert("Invalid input")
 	}
 }
-
-	
-	$("#top > #reset").on("click", function() {
-		$("#wrapper").find(".highlight").remove(".highlight");
-		$("#wrapper").find(".cell").remove(".cell");
-		createGrid();
-	});
-
-
-
-});
-
-
