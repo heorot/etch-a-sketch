@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	createGrid();
+	//createGrid();
 
 	$("#top > #reset").on("click", function() {
 		$("#wrapper").find(".highlight").remove(".highlight");
