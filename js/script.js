@@ -1,10 +1,10 @@
 $(document).ready(function(){
-	prompt("I run when loaded")
+	//prompt("I run when loaded")
 	//createGrid();
 	$("#top > #reset").on("click", function() {
 		$("#wrapper").find(".highlight").remove(".highlight");
 		$("#wrapper").find(".cell").remove(".cell");
-		//createGrid();
+		createGrid();
 	});
 
 
