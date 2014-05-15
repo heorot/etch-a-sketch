@@ -23,6 +23,7 @@ function createGrid() {
 			for(var j = 0; j < gridSize; j++) {
 				$("<div class='cell'></div>").appendTo("#wrapper");
 			}
+			$("#wrapper").append("<div class='new_row'></div>");
 		}
 		
 		$(".cell").css("width", cell_size);
